@@ -15,7 +15,7 @@ export const Layout: React.FC = () => {
       <footer className="border-t border-zinc-900 bg-zinc-950/60 py-6 text-xs text-zinc-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center space-x-2">
-            <span className="font-semibold text-zinc-300">Quiz App</span>
+            <span className="font-semibold text-zinc-300">Quizzle</span>
             <span>•</span>
             <span>Connected to Spring Boot REST Backend</span>
           </div>
