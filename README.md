@@ -1,2 +1,0 @@
-# Quizzle
-Quiz-App
