@@ -4,8 +4,11 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+<<<<<<< HEAD
 .env
 
+=======
+>>>>>>> bf1c3b27e78f910235f791dfc301f07613a6f9b1
 ### STS ###
 .apt_generated
 .classpath
@@ -37,4 +40,7 @@ build/
 ### Frontend ###
 frontend/node_modules/
 frontend/dist/
+<<<<<<< HEAD
 frontend/.env
+=======
+>>>>>>> bf1c3b27e78f910235f791dfc301f07613a6f9b1

@@ -35,6 +35,7 @@ export const Navbar: React.FC = () => {
                 <Brain className="w-5 h-5 text-indigo-400 group-hover:text-indigo-300 transition-colors" />
               </div>
             </div>
+<<<<<<< HEAD
             <div className="flex items-center gap-2">
   <span className="text-lg font-bold text-white tracking-tight">
     Quiz<span className="text-indigo-400">zle</span>
@@ -43,6 +44,16 @@ export const Navbar: React.FC = () => {
     Live
   </span>
 </div>
+=======
+            <div>
+              <span className="text-lg font-bold text-white tracking-tight flex items-center gap-1.5">
+                Quiz<span className="text-indigo-400">App</span>
+                <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                  Live
+                </span>
+              </span>
+            </div>
+>>>>>>> bf1c3b27e78f910235f791dfc301f07613a6f9b1
           </Link>
 
           {/* Desktop Navigation */}
