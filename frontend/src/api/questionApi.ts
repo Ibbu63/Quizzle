@@ -2,7 +2,7 @@ import api from './axios';
 import { Question, QuestionCreateRequest } from '../types';
 
 export const getQuestionsByQuizId = async (quizId: number): Promise<Question[]> => {
-  const response = await api.get<Question[]>(`/quizzes/${quizId}/questions`);
+  const response = await api.get<Question[]>(`/api/quizzes/${quizId}/questions`);
   return response.data;
 };
 
@@ -15,7 +15,7 @@ export const createQuestion = async (
   quizId: number,
   data: QuestionCreateRequest
 ): Promise<Question> => {
-  const response = await api.post<Question>(`/quizzes/${quizId}/questions`, data);
+  const response = await api.post<Question>(`/api/quizzes/${quizId}/questions`, data);
   return response.data;
 };
 

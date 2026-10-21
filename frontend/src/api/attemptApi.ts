@@ -14,7 +14,7 @@ export const submitQuiz = async (
     quizId,
     answers,
   };
-  const response = await api.post<QuizAttempt>(`/quizzes/${quizId}/attempts`, payload);
+  const response = await api.post<QuizAttempt>(`/api/quizzes/${quizId}/attempts`, payload);
   return response.data;
 };
 
@@ -23,7 +23,7 @@ export const submitQuiz = async (
  * GET /api/quizzes/{quizId}/attempts
  */
 export const getAttemptsByQuizId = async (quizId: number): Promise<QuizAttempt[]> => {
-  const response = await api.get<QuizAttempt[]>(`/quizzes/${quizId}/attempts`);
+  const response = await api.get<QuizAttempt[]>(`/api/quizzes/${quizId}/attempts`);
   return response.data;
 };
 
@@ -32,7 +32,7 @@ export const getAttemptsByQuizId = async (quizId: number): Promise<QuizAttempt[]
  * GET /api/attempts/{attemptId}
  */
 export const getAttemptById = async (attemptId: number): Promise<QuizAttempt> => {
-  const response = await api.get<QuizAttempt>(`/attempts/${attemptId}`);
+  const response = await api.get<QuizAttempt>(`/api/attempts/${attemptId}`);
   return response.data;
 };
 

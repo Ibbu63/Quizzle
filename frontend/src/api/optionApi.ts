@@ -5,7 +5,7 @@ import { Option, AdminOption, AdminOptionCreateRequest } from '../types';
  * Normal endpoint for quiz taking. Does NOT include `correct`.
  */
 export const getOptionsByQuestionId = async (questionId: number): Promise<Option[]> => {
-  const response = await api.get<Option[]>(`/questions/${questionId}/options`);
+  const response = await api.get<Option[]>(`/api/questions/${questionId}/options`);
   return response.data;
 };
 
@@ -13,7 +13,7 @@ export const getOptionsByQuestionId = async (questionId: number): Promise<Option
  * Normal endpoint to get one option. Does NOT include `correct`.
  */
 export const getOptionById = async (id: number): Promise<Option> => {
-  const response = await api.get<Option>(`/options/${id}`);
+  const response = await api.get<Option>(`/api/options/${id}`);
   return response.data;
 };
 
@@ -24,7 +24,7 @@ export const createOption = async (
   questionId: number,
   data: AdminOptionCreateRequest
 ): Promise<AdminOption> => {
-  const response = await api.post<AdminOption>(`/questions/${questionId}/options`, data);
+  const response = await api.post<AdminOption>(`/api/questions/${questionId}/options`, data);
   return response.data;
 };
 
@@ -35,7 +35,7 @@ export const updateOption = async (
   id: number,
   data: AdminOptionCreateRequest
 ): Promise<AdminOption> => {
-  const response = await api.put<AdminOption>(`/options/${id}`, data);
+  const response = await api.put<AdminOption>(`/api/options/${id}`, data);
   return response.data;
 };
 
@@ -43,6 +43,6 @@ export const updateOption = async (
  * Admin endpoint: delete an option.
  */
 export const deleteOption = async (id: number): Promise<void> => {
-  await api.delete(`/options/${id}`);
+  await api.delete(`/api/options/${id}`);
 };
 
