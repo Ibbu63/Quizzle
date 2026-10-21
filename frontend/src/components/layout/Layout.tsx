@@ -17,28 +17,26 @@ export const Layout: React.FC = () => {
           <div className="flex items-center space-x-2">
             <span className="font-semibold text-zinc-300">Quizzle</span>
             <span>•</span>
-<<<<<<< HEAD
+
             <span>Level Up Yourself</span>
-=======
             <span>Connected to Spring Boot REST Backend</span>
->>>>>>> bf1c3b27e78f910235f791dfc301f07613a6f9b1
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1.5 text-zinc-400">
               <Server className="w-3.5 h-3.5 text-indigo-400" />
-<<<<<<< HEAD
+
               <span>connected</span>
             </div>
             <div className="flex items-center space-x-1 text-emerald-400">
               <Activity className="w-3 h-3 animate-pulse" />
               <span>Active</span>
-=======
+              
               <span>localhost:8081</span>
             </div>
             <div className="flex items-center space-x-1 text-emerald-400">
               <Activity className="w-3 h-3 animate-pulse" />
               <span>API Active</span>
->>>>>>> bf1c3b27e78f910235f791dfc301f07613a6f9b1
+
             </div>
           </div>
         </div>
