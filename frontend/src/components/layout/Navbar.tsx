@@ -44,14 +44,6 @@ export const Navbar: React.FC = () => {
     Live
   </span>
 </div>
-            <div>
-              <span className="text-lg font-bold text-white tracking-tight flex items-center gap-1.5">
-                Quiz<span className="text-indigo-400">App</span>
-                <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                  Live
-                </span>
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -116,4 +108,3 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
-

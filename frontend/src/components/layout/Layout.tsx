@@ -19,7 +19,6 @@ export const Layout: React.FC = () => {
             <span>•</span>
 
             <span>Level Up Yourself</span>
-            <span>Connected to Spring Boot REST Backend</span>
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1.5 text-zinc-400">
@@ -32,11 +31,6 @@ export const Layout: React.FC = () => {
               <span>Active</span>
 
               <span>Server</span>
-            </div>
-            <div className="flex items-center space-x-1 text-emerald-400">
-              <Activity className="w-3 h-3 animate-pulse" />
-              <span>API Active</span>
-
             </div>
           </div>
         </div>
