@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8081/api',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8081',
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000,
+  timeout: 30000,
 });
 
 // Response interceptor to normalize error handling
@@ -13,6 +13,7 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     let message = 'An unexpected error occurred';
+
     if (error.response) {
       if (typeof error.response.data === 'string') {
         message = error.response.data;
@@ -26,9 +27,9 @@ api.interceptors.response.use(
     } else {
       message = error.message;
     }
+
     return Promise.reject(new Error(message));
   }
 );
 
 export default api;
-

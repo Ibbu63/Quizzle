@@ -30,8 +30,8 @@ export const Layout: React.FC = () => {
             <div className="flex items-center space-x-1 text-emerald-400">
               <Activity className="w-3 h-3 animate-pulse" />
               <span>Active</span>
-              
-              <span>localhost:8081</span>
+
+              <span>Server</span>
             </div>
             <div className="flex items-center space-x-1 text-emerald-400">
               <Activity className="w-3 h-3 animate-pulse" />
